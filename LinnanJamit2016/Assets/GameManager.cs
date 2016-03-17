@@ -27,6 +27,14 @@ public class GameManager : MonoBehaviour
             Application.LoadLevel(Application.loadedLevel);
         }
 
+        if (Input.GetButtonUp("Xplode"))
+        {
+            if (canExit == true)
+            {
+                Application.LoadLevel(Application.loadedLevel);
+            }
+        }
+
     }
 
     public void AddScore(int _score,Vector3 pos)
@@ -50,8 +58,9 @@ public class GameManager : MonoBehaviour
     void i ()
     {
         canExit = true;
-        GameOverCanvas.transform.parent = null;
-        GameOverCanvas.transform.position = vef;
+       // GameOverCanvas.transform.parent = null;
+       // GameOverCanvas.transform.position = vef;
+        GameOverCanvas.gameObject.SetActive(false);
     }
 
 }

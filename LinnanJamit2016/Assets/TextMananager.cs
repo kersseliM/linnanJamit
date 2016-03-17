@@ -16,8 +16,8 @@ public class TextMananager : MonoBehaviour
     {
       /*  GameObject g = Instantiate(Text, pos, Text.transform.rotation) as GameObject;
         g.GetComponent<Text_Effect>().SetText(Score.ToString());
-        g.transform.LookAt(t.position+t.forward *100);
-       * */
+        g.transform.LookAt(t.position+t.forward *100);*/
+     
     }
 
 }
