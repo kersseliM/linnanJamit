@@ -77,6 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   force: 10
+  timeToBoom: 1
 --- !u!135 &13574280
 SphereCollider:
   m_ObjectHideFlags: 1

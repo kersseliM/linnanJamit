@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 857d4cf0f8b967348893b22a22082634
+timeCreated: 1458227940
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Chair_back01
+    100004: Chair_back02
+    100006: Chair_back03
+    100008: Chair_back04
+    100010: Chair_leg01
+    100012: Chair_leg02
+    100014: Chair_leg03
+    100016: Chair_leg04
+    100018: Chair_leg_support01
+    100020: Chair_leg_support02
+    100022: Chair_leg_support03
+    100024: Chair_leg_support04
+    100026: Chair_sitter
+    400000: //RootNode
+    400002: Chair_back01
+    400004: Chair_back02
+    400006: Chair_back03
+    400008: Chair_back04
+    400010: Chair_leg01
+    400012: Chair_leg02
+    400014: Chair_leg03
+    400016: Chair_leg04
+    400018: Chair_leg_support01
+    400020: Chair_leg_support02
+    400022: Chair_leg_support03
+    400024: Chair_leg_support04
+    400026: Chair_sitter
+    2300000: Chair_back01
+    2300002: Chair_back02
+    2300004: Chair_back03
+    2300006: Chair_back04
+    2300008: Chair_leg01
+    2300010: Chair_leg02
+    2300012: Chair_leg03
+    2300014: Chair_leg04
+    2300016: Chair_leg_support01
+    2300018: Chair_leg_support02
+    2300020: Chair_leg_support03
+    2300022: Chair_leg_support04
+    2300024: Chair_sitter
+    3300000: Chair_back01
+    3300002: Chair_back02
+    3300004: Chair_back03
+    3300006: Chair_back04
+    3300008: Chair_leg01
+    3300010: Chair_leg02
+    3300012: Chair_leg03
+    3300014: Chair_leg04
+    3300016: Chair_leg_support01
+    3300018: Chair_leg_support02
+    3300020: Chair_leg_support03
+    3300022: Chair_leg_support04
+    3300024: Chair_sitter
+    4300000: Chair_leg_support04
+    4300002: Chair_leg_support03
+    4300004: Chair_leg_support02
+    4300006: Chair_leg_support01
+    4300008: Chair_leg01
+    4300010: Chair_leg02
+    4300012: Chair_leg03
+    4300014: Chair_leg04
+    4300016: Chair_back04
+    4300018: Chair_back03
+    4300020: Chair_back02
+    4300022: Chair_back01
+    4300024: Chair_sitter
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

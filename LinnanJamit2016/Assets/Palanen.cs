@@ -3,16 +3,13 @@ using System.Collections;
 
 public class Palanen : MonoBehaviour
 {
+    public int score = 10;
 
-    // Use this for initialization
-    void Start()
+
+    void OnCollisionEnter()
     {
-
+        GameManager.Instance.AddScore(score);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
 }
