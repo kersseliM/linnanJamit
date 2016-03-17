@@ -8,7 +8,7 @@ public class Palanen : MonoBehaviour
 
     void OnCollisionEnter()
     {
-        GameManager.Instance.AddScore(score);
+        GameManager.Instance.AddScore(score,transform.position);
     }
 
 

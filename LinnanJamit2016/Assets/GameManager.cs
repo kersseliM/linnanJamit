@@ -7,10 +7,12 @@ public class GameManager : MonoBehaviour
     public int Score;
 
   public static  GameManager Instance;
+    TextMananager tm;
     // Use this for initialization
     void Awake()
     {
         Instance = this;
+        tm = GetComponent<TextMananager>();
     }
 
     // Update is called once per frame
@@ -19,9 +21,10 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void AddScore(int _score)
+    public void AddScore(int _score,Vector3 pos)
     {
-        Score+=_score;
+        tm.MakeText(pos, _score);
+        Score+=_score;       
     }
 
 
