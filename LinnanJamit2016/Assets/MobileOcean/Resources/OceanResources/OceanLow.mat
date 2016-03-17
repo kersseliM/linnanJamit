@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OceanLow
+  m_Shader: {fileID: 4800000, guid: 49e3481e26ccb41ecb88716871eac4d4, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaterTex
+        second:
+          m_Texture: {fileID: 2800000, guid: b07d1dad6964e4ded916de1aaaa8d3be, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaterTex2
+        second:
+          m_Texture: {fileID: 2800000, guid: cb24ba6eaf7ff4392b28777f6be8377e, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ShoreLineTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 9bb41021296684c00bcd7fbfa8b4d1a5, type: 3}
+          m_Scale: {x: 2, y: 2}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ShoreGray
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ReflectionTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _InvFade
+        second: 1
+      data:
+        first:
+          name: _Tiling
+        second: 0.00971
+      data:
+        first:
+          name: _WaveSpeed
+        second: 0.34
+      data:
+        first:
+          name: _ReflectionIntensity
+        second: 0.028
+      data:
+        first:
+          name: _SpecularRatio
+        second: 308
+      data:
+        first:
+          name: _ShoreLineIntensity
+        second: 4.8
+      data:
+        first:
+          name: _Alpha
+        second: 1
+      data:
+        first:
+          name: _OceanWidth
+        second: 10240
+      data:
+        first:
+          name: _OceanHeight
+        second: 10240
+      data:
+        first:
+          name: _ReflectionTint
+        second: 0.7850746
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _BottomColor
+        second: {r: 0.80597013, g: 0.9104478, b: 1, a: 0}
+      data:
+        first:
+          name: _TopColor
+        second: {r: 0.21352196, g: 0.3155406, b: 0.4029851, a: 0}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _ShoreLineColors
+        second: {r: 0.4, g: 0.4, b: 0.4, a: 1}
