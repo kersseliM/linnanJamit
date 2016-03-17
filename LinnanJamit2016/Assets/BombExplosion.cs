@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.VR;
 
 public class BombExplosion : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class BombExplosion : MonoBehaviour
     SphereCollider bc;
     bool isExpanding;
     float radius;
-  public float maxRadius;
+    public float maxRadius;
     public float expandSpeed;
     public float ExplosionForce = 10;
     // Use this for initialization
@@ -21,7 +22,7 @@ public class BombExplosion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isExpanding)
+        if (isExpanding)
         {
             radius += Time.deltaTime * expandSpeed;
 
@@ -29,7 +30,7 @@ public class BombExplosion : MonoBehaviour
 
             bc.radius = Mathf.Lerp(0, maxRadius, percentage);
 
-            if(percentage >=1)
+            if (percentage >= 1)
             {
                 isExpanding = false;
                 bc.enabled = false;
@@ -57,6 +58,14 @@ public class BombExplosion : MonoBehaviour
         Vector3 direction = rb.position - transform.position;
         direction = direction * ExplosionForce;
         rb.AddForce(direction, ForceMode.Impulse);
+
+        if (rb.GetComponent<BasePamahtavaObjecti>() != null)
+        {
+            rb.gameObject.SetActive(false);
+            rb.GetComponent<BoxCollider>().enabled = false;
+            BasePamahtavaObjecti bs = rb.GetComponent<BasePamahtavaObjecti>();
+            ExplosionManager.Instance.AddExplosion(bs.transform.position, bs.radius, bs.explosionForce);
+        }
     }
 }
 

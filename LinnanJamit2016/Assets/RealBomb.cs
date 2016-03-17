@@ -1,34 +1,58 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RealBomb : MonoBehaviour 
+public class RealBomb : MonoBehaviour
 {
 
 
-    float radius = 5;
-    float force = 10;
+    public float radius = 5;
+    public float force = 10;
+    public float timeToBoom=2;
+    float timer;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () 
+
+    bool isDetonadet;
+
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
     {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Explode();
+            Denotate();
         }
 
 
-	}
 
 
+        if(isDetonadet)
+        {
+
+            timer+= Time.deltaTime;
+
+            if(timer > timeToBoom)
+            {
+                Explode();
+            }
+
+
+        }
+
+    }
+
+    public void Denotate()
+    {
+        isDetonadet = true;
+    }
 
     void Explode()
     {
-       ExplosionManager.Instance.AddExplosion(transform.position,radius,force);
+        ExplosionManager.Instance.AddExplosion(transform.position, radius, force);
     }
 }
