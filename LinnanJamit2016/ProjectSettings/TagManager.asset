@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Bomb
   - Item
-  - New Tag
+  - Explosive
   layers:
   - Default
   - TransparentFX

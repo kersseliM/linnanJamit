@@ -1,37 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bomb : MonoBehaviour
+public class BombExplosion : MonoBehaviour
 {
 
     SphereCollider bc;
     bool isExpanding;
     float radius;
-    float maxRadius;
+  public float maxRadius;
     public float expandSpeed;
     public float ExplosionForce = 10;
     // Use this for initialization
 
-    void Start()
+    void Awake()
     {
         bc = GetComponent<SphereCollider>();
         maxRadius = bc.radius;
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Explode();
-        }
-
-
         if(isExpanding)
         {
-
             radius += Time.deltaTime * expandSpeed;
 
             float percentage = radius / maxRadius;
@@ -45,12 +36,8 @@ public class Bomb : MonoBehaviour
 
             }
         }
-
-
     }
-
-
-    private void Explode()
+    public void Explode()
     {
         isExpanding = true;
         bc.enabled = true;
@@ -61,12 +48,9 @@ public class Bomb : MonoBehaviour
     {
         if (col.gameObject.GetComponent<Rigidbody>() != null)
         {
-          
             AddForce(col.GetComponent<Rigidbody>());
         }
     }
-
-
     void AddForce(Rigidbody rb)
     {
         rb.isKinematic = false;
@@ -74,7 +58,5 @@ public class Bomb : MonoBehaviour
         direction = direction * ExplosionForce;
         rb.AddForce(direction, ForceMode.Impulse);
     }
-
-
 }
 

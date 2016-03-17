@@ -1,42 +1,42 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &136066
+--- !u!1 &149622
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 463612}
-  - 33: {fileID: 3320490}
-  - 23: {fileID: 2302662}
-  - 135: {fileID: 13582424}
-  - 114: {fileID: 11470336}
+  - 4: {fileID: 441590}
+  - 33: {fileID: 3326826}
+  - 23: {fileID: 2353112}
+  - 135: {fileID: 13557880}
+  - 114: {fileID: 11450700}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: BombExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &463612
+--- !u!4 &441590
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136066}
+  m_GameObject: {fileID: 149622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.73, y: 2.1, z: 1.71}
+  m_LocalPosition: {x: -11.73, y: 2.1, z: -2.24}
   m_LocalScale: {x: 7.17439, y: 7.1743846, z: 7.1743846}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2302662
+--- !u!23 &2353112
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136066}
+  m_GameObject: {fileID: 149622}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,32 +57,33 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3320490
+--- !u!33 &3326826
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136066}
+  m_GameObject: {fileID: 149622}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &11470336
+--- !u!114 &11450700
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136066}
+  m_GameObject: {fileID: 149622}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c4a981a4f76e484ca9651e0944e51c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxRadius: 5
   expandSpeed: 5
-  ExplosionForce: 15
---- !u!135 &13582424
+  ExplosionForce: 10
+--- !u!135 &13557880
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136066}
+  m_GameObject: {fileID: 149622}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 0
@@ -98,5 +99,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 136066}
+  m_RootGameObject: {fileID: 149622}
   m_IsPrefabParent: 1
