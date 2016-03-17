@@ -4,6 +4,8 @@ using UnityEngine.VR;
 
 public class BombExplosion : MonoBehaviour
 {
+    public AudioClip explosion;
+    private AudioSource source;
 
     SphereCollider bc;
     bool isExpanding;
@@ -15,6 +17,8 @@ public class BombExplosion : MonoBehaviour
 
     void Awake()
     {
+        source = GetComponent<AudioSource>();
+
         bc = GetComponent<SphereCollider>();
         maxRadius = bc.radius;
     }
@@ -43,6 +47,8 @@ public class BombExplosion : MonoBehaviour
         isExpanding = true;
         bc.enabled = true;
         GetComponent<MeshRenderer>().enabled = false;
+
+        source.PlayOneShot(explosion);
     }
 
     void OnTriggerEnter(Collider col)
