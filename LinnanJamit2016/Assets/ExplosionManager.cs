@@ -5,7 +5,10 @@ public class ExplosionManager : MonoBehaviour
 {
     public static ExplosionManager Instance;
     public GameObject Explosion;
-
+    bool firstExplo;
+    float timer;
+    public float endWaitTime = 5;
+    bool Once;
 
     void Awake()
     {
@@ -15,12 +18,37 @@ public class ExplosionManager : MonoBehaviour
             Instance = this;
 
             DontDestroyOnLoad(gameObject);
-
         }
     }
 
+    void Update()
+    {
+        if (firstExplo)
+        {
+            timer += Time.deltaTime;
+            if (timer > endWaitTime)
+            {
+                if (!Once)
+                {
+                    Once = true;
+                    GameManager.Instance.GameOver();
+                }
+            }
+
+        }
+
+    }
+
+
     public void AddExplosion(Vector3 pos, float radius, float force)
     {
+
+        if(!firstExplo)
+        {
+            firstExplo = true;
+
+        }
+        timer = 0;
         GameObject g = Instantiate(Explosion, pos, Quaternion.identity) as GameObject;
         BombExplosion b = g.GetComponent<BombExplosion>();
         b.maxRadius = radius;

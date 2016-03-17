@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
 
   public static  GameManager Instance;
     TextMananager tm;
+    public GameObject GameOverCanvas;
+    public Text t;
     // Use this for initialization
     void Awake()
     {
@@ -19,6 +22,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
+        if(Input.GetButtonUp("Xplode"))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+
     }
 
     public void AddScore(int _score,Vector3 pos)
@@ -27,5 +35,23 @@ public class GameManager : MonoBehaviour
         Score+=_score;       
     }
 
+
+    Vector3 vef;
+    public void GameOver()
+    {
+        GameOverCanvas.SetActive(true);
+        t.text = Score.ToString();
+        vef = GameOverCanvas.transform.position;
+        Invoke("i", 2);
+    }
+
+    bool canExit;
+
+    void i ()
+    {
+        canExit = true;
+        GameOverCanvas.transform.parent = null;
+        GameOverCanvas.transform.position = vef;
+    }
 
 }
