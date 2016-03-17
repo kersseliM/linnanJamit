@@ -22,8 +22,11 @@ public class Movement : MonoBehaviour
     }
 
     void Update()
+    
     {
+        GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         Assorted();
+        moveAxis = Vector2.zero;
 
         moveAxis.x = Input.GetAxis("Horizontal");
         moveAxis.y = -Input.GetAxis("Vertical");
