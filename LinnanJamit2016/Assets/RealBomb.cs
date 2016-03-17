@@ -23,7 +23,7 @@ public class RealBomb : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Xplode"))
         {
             Explode();
         }

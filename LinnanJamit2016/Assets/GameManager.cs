@@ -24,13 +24,14 @@ public class GameManager : MonoBehaviour
 
         if(Input.GetButtonUp("Xplode"))
         {
-            Application.LoadLevel(Application.loadedLevel);
+       //     Application.LoadLevel(Application.loadedLevel);
         }
 
         if (Input.GetButtonUp("Xplode"))
         {
             if (canExit == true)
             {
+                canExit = false;
                 Application.LoadLevel(Application.loadedLevel);
             }
         }
