@@ -54,5 +54,6 @@ public class RealBomb : MonoBehaviour
     void Explode()
     {
         ExplosionManager.Instance.AddExplosion(transform.position, radius, force);
+        gameObject.SetActive(false);
     }
 }
