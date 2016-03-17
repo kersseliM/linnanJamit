@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 7a3e06aa9b441df4ab1879611eebb8c6
+timeCreated: 1458238128
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Candle07
+    100004: Candle07_001
+    100006: Candle07_002
+    100008: Candle07_003
+    100010: Candle07_004
+    100012: Candle07_005
+    100014: Candle07_006
+    100016: Candle_stand
+    100018: Holder04
+    100020: Holder04_001
+    100022: Holder04_002
+    100024: Holder04_003
+    100026: Holder04_004
+    100028: Holder04_005
+    100030: Candle01
+    100032: Candle02
+    100034: Candle03
+    100036: Candle04
+    100038: Candle05
+    100040: Candle06
+    100042: Holder01
+    100044: Holder02
+    100046: Holder03
+    100048: Holder05
+    100050: Holder06
+    400000: //RootNode
+    400002: Candle07
+    400004: Candle07_001
+    400006: Candle07_002
+    400008: Candle07_003
+    400010: Candle07_004
+    400012: Candle07_005
+    400014: Candle07_006
+    400016: Candle_stand
+    400018: Holder04
+    400020: Holder04_001
+    400022: Holder04_002
+    400024: Holder04_003
+    400026: Holder04_004
+    400028: Holder04_005
+    400030: Candle01
+    400032: Candle02
+    400034: Candle03
+    400036: Candle04
+    400038: Candle05
+    400040: Candle06
+    400042: Holder01
+    400044: Holder02
+    400046: Holder03
+    400048: Holder05
+    400050: Holder06
+    2300000: Candle07
+    2300002: Candle07_001
+    2300004: Candle07_002
+    2300006: Candle07_003
+    2300008: Candle07_004
+    2300010: Candle07_005
+    2300012: Candle07_006
+    2300014: Candle_stand
+    2300016: Holder04
+    2300018: Holder04_001
+    2300020: Holder04_002
+    2300022: Holder04_003
+    2300024: Holder04_004
+    2300026: Holder04_005
+    2300028: Candle01
+    2300030: Candle02
+    2300032: Candle03
+    2300034: Candle04
+    2300036: Candle05
+    2300038: Candle06
+    2300040: Holder01
+    2300042: Holder02
+    2300044: Holder03
+    2300046: Holder05
+    2300048: Holder06
+    3300000: Candle07
+    3300002: Candle07_001
+    3300004: Candle07_002
+    3300006: Candle07_003
+    3300008: Candle07_004
+    3300010: Candle07_005
+    3300012: Candle07_006
+    3300014: Candle_stand
+    3300016: Holder04
+    3300018: Holder04_001
+    3300020: Holder04_002
+    3300022: Holder04_003
+    3300024: Holder04_004
+    3300026: Holder04_005
+    3300028: Candle01
+    3300030: Candle02
+    3300032: Candle03
+    3300034: Candle04
+    3300036: Candle05
+    3300038: Candle06
+    3300040: Holder01
+    3300042: Holder02
+    3300044: Holder03
+    3300046: Holder05
+    3300048: Holder06
+    4300000: Candle07_006
+    4300002: Candle07_005
+    4300004: Candle07_004
+    4300006: Candle07_003
+    4300008: Candle07_002
+    4300010: Candle07_001
+    4300012: Holder04_005
+    4300014: Holder04_004
+    4300016: Holder04_003
+    4300018: Holder04_002
+    4300020: Holder04_001
+    4300022: Candle07
+    4300024: Holder04
+    4300026: Candle_stand
+    4300028: Candle01
+    4300030: Candle04
+    4300032: Candle05
+    4300034: Candle06
+    4300036: Candle02
+    4300038: Holder05
+    4300040: Holder06
+    4300042: Holder03
+    4300044: Holder02
+    4300046: Candle03
+    4300048: Holder01
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
