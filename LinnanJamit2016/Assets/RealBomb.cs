@@ -25,7 +25,7 @@ public class RealBomb : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Denotate();
+            Explode();
         }
 
 

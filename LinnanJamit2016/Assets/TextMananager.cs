@@ -14,9 +14,10 @@ public class TextMananager : MonoBehaviour
 
     public void MakeText(Vector3 pos, int Score)
     {
-        GameObject g = Instantiate(Text, pos, Text.transform.rotation) as GameObject;
+      /*  GameObject g = Instantiate(Text, pos, Text.transform.rotation) as GameObject;
         g.GetComponent<Text_Effect>().SetText(Score.ToString());
         g.transform.LookAt(t.position+t.forward *100);
+       * */
     }
 
 }
