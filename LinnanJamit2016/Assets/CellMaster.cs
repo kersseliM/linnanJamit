@@ -20,8 +20,6 @@ public class CellMaster : MonoBehaviour
 
     }
 
-
-
     void Active()
     {
         main.SetActive(false);
