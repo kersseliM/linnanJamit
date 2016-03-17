@@ -38,7 +38,7 @@ public class BombExplosion : MonoBehaviour
             {
                 isExpanding = false;
                 bc.enabled = false;
-                gameObject.SetActive(true);
+                gameObject.SetActive(false);
             }
         }
     }
