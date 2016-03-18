@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         GameOverCanvas.SetActive(true);
         t.text = Score.ToString();
         vef = GameOverCanvas.transform.position;
-        Invoke("i", 2);
+        Invoke("i", 5);
     }
 
     bool canExit;
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
         canExit = true;
        // GameOverCanvas.transform.parent = null;
        // GameOverCanvas.transform.position = vef;
-        GameOverCanvas.gameObject.SetActive(false);
+     //   GameOverCanvas.gameObject.SetActive(false);
     }
 
 }

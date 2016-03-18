@@ -48,7 +48,7 @@ public class BombExplosion : MonoBehaviour
         bc.enabled = true;
         GetComponent<MeshRenderer>().enabled = false;
 
-        source.PlayOneShot(explosion);
+     //   source.PlayOneShot(explosion);
     }
 
     void OnTriggerEnter(Collider col)

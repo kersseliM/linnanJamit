@@ -8,6 +8,7 @@ public class ExplosionManager : MonoBehaviour
     bool firstExplo;
     float timer;
     public float endWaitTime = 5;
+    AudioSource ac;
     bool Once;
 
     void Awake()
@@ -19,10 +20,21 @@ public class ExplosionManager : MonoBehaviour
 
             DontDestroyOnLoad(gameObject);
         }
+        ac = GetComponent<AudioSource>();
     }
 
     void Update()
     {
+
+
+        if (Input.GetButtonDown("Xplode"))
+        {
+            ac.Play();
+        }
+
+
+
+
         if (firstExplo)
         {
             timer += Time.deltaTime;
