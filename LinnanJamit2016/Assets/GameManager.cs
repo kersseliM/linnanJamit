@@ -11,11 +11,15 @@ public class GameManager : MonoBehaviour
     TextMananager tm;
     public GameObject GameOverCanvas;
     public Text t;
+
+    public MusicBox mb;
+
     // Use this for initialization
     void Awake()
     {
         Instance = this;
         tm = GetComponent<TextMananager>();
+        
     }
 
     // Update is called once per frame
@@ -32,6 +36,7 @@ public class GameManager : MonoBehaviour
             if (canExit == true)
             {
                 canExit = false;
+                GameOverCanvas.SetActive(false);
                 Application.LoadLevel(Application.loadedLevel);
             }
         }

@@ -5,7 +5,7 @@ public class ExplosionManager : MonoBehaviour
 {
     public static ExplosionManager Instance;
     public GameObject Explosion;
-    bool firstExplo;
+   public bool firstExplo;
     float timer;
     public float endWaitTime = 5;
     AudioSource ac;
@@ -58,7 +58,7 @@ public class ExplosionManager : MonoBehaviour
         if(!firstExplo)
         {
             firstExplo = true;
-
+            GameManager.Instance.mb.PlayMusic(GameManager.Instance.mb.b);
         }
         timer = 0;
         GameObject g = Instantiate(Explosion, pos, Quaternion.identity) as GameObject;
