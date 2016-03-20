@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         Invoke("i", 5);
     }
 
-    bool canExit;
+   public bool canExit;
 
     void i ()
     {

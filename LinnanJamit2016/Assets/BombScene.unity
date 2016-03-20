@@ -100492,6 +100492,7 @@ GameObject:
   - 223: {fileID: 1128832014}
   - 114: {fileID: 1128832013}
   - 114: {fileID: 1128832012}
+  - 114: {fileID: 1128832015}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -100577,6 +100578,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1128832015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128832010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0f44f3d4e50a74d89439aa82f30c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1145348428 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 4cb9253d77cbd1a42b427838a35e39d8, type: 3}

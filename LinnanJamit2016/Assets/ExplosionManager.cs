@@ -9,7 +9,7 @@ public class ExplosionManager : MonoBehaviour
     float timer;
     public float endWaitTime = 5;
     AudioSource ac;
-    bool Once;
+ public   bool Once;
 
     void Awake()
     {
